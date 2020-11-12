@@ -9,3 +9,10 @@ let groups = [
     ['Perth Glory', 'Shanghai Shenhua', 'Johor Darul', 'Yokohama F.Marinos'],
     ['FC Tokyo', 'Suwon Samsung', 'Jeonbuk Hyundai', 'Ulsan Hyundai' ], 
 ]
+
+exports.groupStage = () =>{
+    for(i=0 ; i< groups.length; i++){
+        groupList = groups[i]
+        console.log(`Group ${i+1}`, groupList);
+    }
+}
