@@ -17,6 +17,7 @@ exports.groupStage = () =>{
     }
 }
 
+//!Groups
 exports.groupObj = {
     A1:{
         name: "Al Ahli FC",
@@ -44,6 +45,38 @@ exports.groupObj = {
     },
     A4:{
         name: "AL Hilal",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    B1:{
+        name: "Pakhtakor",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    B2:{
+        name: "Shabab Dubai",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    B3:{
+        name: "Shahr Khodro",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    B4:{
+        name: "Tractor Sazi",
         points: 0,
         goalsScored: 0,
         goalsConceded: 0,
