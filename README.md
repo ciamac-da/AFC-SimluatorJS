@@ -1,2 +1,2 @@
 # AFC-SimluatorJS
-AFC-Champions League 2020 siulator!:)
+AFC-Champions League 2020 simulator!:)
