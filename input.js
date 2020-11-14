@@ -83,5 +83,37 @@ exports.groupObj = {
         goalDifference: 0
 
     },
+    C1:{
+        name: "Persepolis",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    C2:{
+        name: "Al Taawoun",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    C3:{
+        name: "Al Duhail",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    C4:{
+        name: "Sharjah",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
     
 }
