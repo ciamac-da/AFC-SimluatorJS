@@ -115,5 +115,164 @@ exports.groupObj = {
         goalDifference: 0
 
     },
-    
+    D1:{
+        name: "Al Nassr",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    D2:{
+        name: "Al Saad",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    D3:{
+        name: "Sepahan",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    D4:{
+        name: "Al Ain",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    E1:{
+        name: "FC Seoul",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    E2:{
+        name: "Beijing FC",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    E3:{
+        name: "Melbourne Victory",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    E4:{
+        name: "Chiangrai",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    F1:{
+        name: "Guangzhou",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    F2:{
+        name: "Vissel Kobe",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    F3:{
+        name: "Shanghai SIPG",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    F4:{
+        name: "Sydney FC",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    G1:{
+        name: "Perth Glory",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    G2:{
+        name: "Shanghai Shenhua",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    G3:{
+        name: "Johor Darul",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    G4:{
+        name: "Yokohama F.Marinos",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    H1:{
+        name: "FC Tokyo",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    H2:{
+        name: "Suwon Samsung",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    H3:{
+        name: "Jeonbuk Hyundai",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
+    H4:{
+        name: "Ulsan Hyundai",
+        points: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        goalDifference: 0
+
+    },
 }
