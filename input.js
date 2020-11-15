@@ -18,6 +18,7 @@ exports.groupStage = () =>{
 }
 
 //!Groups
+// groups standing
 exports.groupObj = {
     A1:{
         name: "Al Ahli FC",
