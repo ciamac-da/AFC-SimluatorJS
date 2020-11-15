@@ -48,5 +48,7 @@ const simulator = () => {
     let groupTable = []
     let knockOutStageTeams = []
 
-    for(let j= char; j < (char + (teams / 4)))
+    for(let j= char; j < (char + (teams / 4)); j++){
+        
+    }
 }
