@@ -49,6 +49,18 @@ const simulator = () => {
     let knockOutStageTeams = []
 
     for(let j= char; j < (char + (teams / 4)); j++){
-        
+        let group1 = string.fromCharCode(j)
+        for(let i=0; i < 4; i++){
+            let t1 = group1 +(i+i)
+            let team = groupObj[t1]
+
+            groupTable.push([team.name, team.points, team.goalsScored, team.goalsConceded])
+        }
+        groupTable.sort(function(a,b){
+            if(a[1] === b[1]) {
+                return a[5] - b[5]
+            }
+            return b[1] - a[1]
+        })
     }
 }
