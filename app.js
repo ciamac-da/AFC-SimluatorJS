@@ -62,7 +62,9 @@ const simulator = () => {
             }
             return b[1] - a[1]
         })
+        knockOutStageTeams = knockOutStageTeams.concat(groupTable.slice(0,2))
+        console.log('Group Stage Final Table:', groupTable)
+        groupTable = []
 
-        
     }
 }
