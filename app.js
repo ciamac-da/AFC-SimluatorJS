@@ -62,5 +62,7 @@ const simulator = () => {
             }
             return b[1] - a[1]
         })
+
+        
     }
 }
