@@ -67,4 +67,21 @@ const simulator = () => {
         groupTable = []
 
     }
+    var best16 = []
+    for(let i = 0; i < knockOutStageTeams.length; i++){
+        best16.push({name: knockOutStageTeams[i].slice(0,1).toString(), totalGoals: 0, guestGoals:0})
+        
+    }
+    
+    console.log(best16)
+    let best8 = []
+    let best4 = []
+    let best2 = []
+    //Schedule for the knockOut phase    
+    let knockOut16 = [[0,3], [3,0], [4,7], [7,4], [8,11], [11,8], [12,15], [15,12], [2,1], [1,2], [6,5], [5,6], [10,9],[9,10], [14,13],[13,14]] 
+    let knockOut8  = [[0,1], [1,0], [2,3], [3,2],[4,5], [5,4], [6,7], [7,6]] 
+    let semiFinal  = [[0,1], [1,0], [2,3], [3,2]]
+    let final      = [[0,1]]    
+    let winner     = ''
+
 }
