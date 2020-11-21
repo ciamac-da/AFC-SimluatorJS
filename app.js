@@ -83,5 +83,33 @@ const simulator = () => {
     let semiFinal  = [[0,1], [1,0], [2,3], [3,2]]
     let final      = [[0,1]]    
     let winner     = ''
-
+    
+    
+    //KnockOut function for all stages
+    const knockOutFunc = (teamsQual, schedule, teamsWinerArr=[], stage ) =>{
+        
+        var pot1=[]; 
+        var pot2=[];
+        
+        for(let i = 0; i <schedule.length; i++){
+            let t1 = schedule[i][0]
+            let t2 = schedule[i][1]
+            
+            let team1 = teamsQual[t1]
+            let team2 = teamsQual[t2]
+            
+            
+            var goalsTeam1 = Math.round(Math.random() * 3)
+            var goalsTeam2 = Math.round(Math.random() * 3)
+            
+        team1.totalGoals += goalsTeam1
+        team2.totalGoals += goalsTeam2
+        team2.guestGoals += goalsTeam2
+        
+        console.log(`${stage}: ${team1.name} vs. ${team2.name} ${goalsTeam1}:${goalsTeam2}`)
+        
+        pot1.push(team1)
+        pot2.push(team2)
+    }
+}
 }
