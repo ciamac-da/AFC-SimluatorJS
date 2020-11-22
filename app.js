@@ -110,6 +110,27 @@ const simulator = () => {
         
         pot1.push(team1)
         pot2.push(team2)
+
+  // The final match condition because is the only match thah the teams plays just once
+  if(stage === 'Final-Match'){
+    if(goalsTeam1 > goalsTeam2){
+        console.log(`The Winner is ${team1.name}`)
+    } else if (goalsTeam2 > goalsTeam1){
+        console.log(`The Winner is ${team2.name}`)
+    }else{
+        if ( Math.random() > .5 ){
+            console.log(`The winner is ${team1.name} after penalty`)
+        } else {
+            console.log(`The winner is ${team2.name} after penalty`)
+
+        }
+    }
+    
+    
+}
+
+
+        
     }
 }
 }
