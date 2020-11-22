@@ -3,16 +3,16 @@ groupStage()
 
 const simulator = () => {
     // All teams
-    let teams = Object.keys(groupObj).length
+    let totalTeams = Object.keys(groupObj).length
     // Schedule
     let gamePlan = [[1,2], [3,4], [1,3], [2,4], [1,4], [2,3], [2,1], [4,3], [3,1], [4,2], [4,1], [3,2]]
-    let char = "A".charCodeAt(0)
+    let charCode = "A".charCodeAt(0)
 
-    for(let i=char; i < (char + (teams /4)); i++){
+    for(let i=charCode; i < (charCode + (totalTeams /4)); i++){
         
         let group = String.fromCharCode(i)
 
-        for( let j=0 ; j < gamePlan.length; i++){
+        for( let j=0 ; j < gamePlan.length; j++){
 
             let t1 = group + gamePlan[j][0]
             let t2 = group + gamePlan[j][1]
@@ -22,12 +22,12 @@ const simulator = () => {
             let team2 = groupObj[t2]
             
             // Randomize the score
-            let goalsTeam1 = Math.round(Math.random() + 3)
-            let goalsTeam2 = Math.round(Math.random() + 3)
+            var goalsTeam1 = Math.round(Math.random() + 3)
+            var goalsTeam2 = Math.round(Math.random() + 3)
 
             team1.goalsScored += goalsTeam1
             team1.goalsConceded += goalsTeam2
-            team2.goalsScored += goalsTeam1
+            team2.goalsScored += goalsTeam2
             team2.goalsConceded += goalsTeam1
 
             let resultDifference = goalsTeam1 - goalsTeam2
@@ -48,10 +48,10 @@ const simulator = () => {
     let groupTable = []
     let knockOutStageTeams = []
 
-    for(let j= char; j < (char + (teams / 4)); j++){
-        let group1 = string.fromCharCode(j)
+    for(let j= charCode; j < (charCode + (totalTeams / 4)); j++){
+        var group1 = String.fromCharCode(j)
         for(let i=0; i < 4; i++){
-            let t1 = group1 +(i+i)
+            let t1 = group1 +(i+1)
             let team = groupObj[t1]
 
             groupTable.push([team.name, team.points, team.goalsScored, team.goalsConceded])
