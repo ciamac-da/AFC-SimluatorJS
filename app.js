@@ -35,7 +35,7 @@ const simulator = () => {
             // Points logic
             if( resultDifference > 0 ) {
                 team1.points += 3
-            } else if( resultDiff < 0) {
+            } else if( resultDifference < 0) {
                 team2.points += 3
             } else {
                 team1.points += 1
@@ -125,12 +125,43 @@ const simulator = () => {
 
         }
     }
-    
-    
+}
+}
+for(let j = 0; j<pot1.length -1; j += 2){
+            
+    var score1 = pot1[j]
+    var score2 = pot2[j]
+    // goal diffence
+     if( score1.totalGoals > score2.totalGoals ){
+         teamsWinerArr.push(pot1[j])
+     } else if(score1.totalGoals < score2.totalGoals){
+         teamsWinerArr.push(pot2[j])
+     } else { // guest goal difference
+        // console.log('guest goals!!!')
+        if( score1.guestGoals > score2.guestGoals ){
+            teamsWinerArr.push(pot1[j])
+        } else if (score1.guestGoals < score2.guestGoals) {
+            teamsWinerArr.push(pot2[j])
+        } else { // penalty
+            // console.log('penalty!!!',score1.totalGoals,score2.totalGoals,score1.guestGoals,score2.guestGoals)
+            if ( Math.random() > .5 ){
+                teamsWinerArr.push(pot1[j])
+            } else {
+                teamsWinerArr.push(pot2[j])
+            }
+        }
+     }
 }
 
+
+
+return teamsWinerArr
+}
+    knockOutFunc(best16, knockOut16, best8, 'Best of 16')
+    knockOutFunc(best8, knockOut8, best4, 'Quater-Final')
+    knockOutFunc(best4, semiFinal, best2, 'Semi-Final')
+    knockOutFunc(best2, final, winner, 'Final-Match' )
 
         
-    }
 }
-}
+simulator()
