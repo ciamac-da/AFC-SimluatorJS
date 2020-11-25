@@ -22,8 +22,8 @@ const simulator = () => {
             let team2 = groupObj[t2]
             
             // Randomize the score
-            var goalsTeam1 = Math.round(Math.random() + 3)
-            var goalsTeam2 = Math.round(Math.random() + 3)
+            let goalsTeam1 = Math.round(Math.random() + 3)
+            let goalsTeam2 = Math.round(Math.random() + 3)
 
             team1.goalsScored += goalsTeam1
             team1.goalsConceded += goalsTeam2
@@ -49,7 +49,7 @@ const simulator = () => {
     let knockOutStageTeams = []
 
     for(let j= charCode; j < (charCode + (totalTeams / 4)); j++){
-        var group1 = String.fromCharCode(j)
+        let group1 = String.fromCharCode(j)
         for(let i=0; i < 4; i++){
             let t1 = group1 +(i+1)
             let team = groupObj[t1]
@@ -67,7 +67,7 @@ const simulator = () => {
         groupTable = []
 
     }
-    var best16 = []
+    let best16 = []
     for(let i = 0; i < knockOutStageTeams.length; i++){
         best16.push({name: knockOutStageTeams[i].slice(0,1).toString(), totalGoals: 0, guestGoals:0})
         
@@ -88,8 +88,8 @@ const simulator = () => {
     //KnockOut function for all stages
     const knockOutFunc = (teamsQual, schedule, teamsWinerArr=[], stage ) =>{
         
-        var pot1=[]; 
-        var pot2=[];
+        let pot1=[]; 
+        let pot2=[];
         
         for(let i = 0; i <schedule.length; i++){
             let t1 = schedule[i][0]
@@ -99,8 +99,8 @@ const simulator = () => {
             let team2 = teamsQual[t2]
             
             
-            var goalsTeam1 = Math.round(Math.random() * 3)
-            var goalsTeam2 = Math.round(Math.random() * 3)
+            let goalsTeam1 = Math.round(Math.random() * 3)
+            let goalsTeam2 = Math.round(Math.random() * 3)
             
         team1.totalGoals += goalsTeam1
         team2.totalGoals += goalsTeam2
@@ -129,8 +129,8 @@ const simulator = () => {
 }
 for(let j = 0; j<pot1.length -1; j += 2){
             
-    var score1 = pot1[j]
-    var score2 = pot2[j]
+    let score1 = pot1[j]
+    let score2 = pot2[j]
     // goal diffence
      if( score1.totalGoals > score2.totalGoals ){
          teamsWinerArr.push(pot1[j])
